@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    border-start-start-radius: 5px;
+    border-end-start-radius: 5px;
+}
+
+hr {
+    margin-block: 1rem;
+}
+
+.product {
+    border: 1px solid gray;
+    /* border-radius: 5px; */
+    margin: 1rem;
+}

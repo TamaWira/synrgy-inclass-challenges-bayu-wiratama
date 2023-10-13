@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Shopping Cart</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+
+<body class="bg-light p-3">
+  <div class="container bg-white rounded p-3 shadow">
+    <h1>Shopping Cart</h1>
+
+    <section id="shopping">
+      <div class="row">
+        <section id="products" class="col-lg-7 col-sm-12">
+          <h3>Products</h3>
+          <div id="product" class="product row rounded">
+            <div class="col-12 col-md-2 p-0">
+              <div>
+                <img src="https://picsum.photos/400" alt="Product 1" class="img-fluid rounded-left" />
+              </div>
+            </div>
+            <div class="col d-flex align-items-center">
+              <div>
+                <h4 class="m-0 p-0">Product 1</h4>
+                <p class="m-0 p-0">Price Rp10</p>
+              </div>
+            </div>
+            <div class="col d-flex justify-content-center align-items-center">
+              <button class="add-to-cart btn btn-primary" data-name="Product 1" data-price="10">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <div id="product" class="product row rounded">
+            <div class="col-12 col-md-2 p-0">
+              <div>
+                <img src="https://picsum.photos/300" alt="Product 2" class="img-fluid rounded-left" />
+              </div>
+            </div>
+            <div class="col d-flex align-items-center">
+              <div>
+                <h4 class="m-0 p-0">Product 2</h4>
+                <p class="m-0 p-0">Price Rp15</p>
+              </div>
+            </div>
+            <div class="col d-flex justify-content-center align-items-center">
+              <button class="add-to-cart btn btn-primary" data-name="Product 2" data-price="15">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <div id="product" class="product row rounded">
+            <div class="col-12 col-md-2 p-0">
+              <div>
+                <img src="https://picsum.photos/200" alt="Product 3" class="img-fluid rounded-left" />
+              </div>
+            </div>
+            <div class="col d-flex align-items-center">
+              <div>
+                <h4 class="m-0 p-0">Product 3</h4>
+                <p class="m-0 p-0">Price Rp30</p>
+              </div>
+            </div>
+            <div class="col d-flex justify-content-center align-items-center">
+              <button class="add-to-cart btn btn-primary" data-name="Product 3" data-price="20">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section id="carts" class="col-lg-5 col-sm-12">
+          <h3>Your Cart</h3>
+          <div id="cart"></div>
+        </section>
+      </div>
+    </section>
+
+    <hr />
+
+    <section id="price" class="">
+      <div class="row">
+        <div class="col-12 col-lg-4">
+          <p class="p-0 m-0">Subtotal</p>
+          <h3 class="p-0 m-0">Rp<span id="cart-subtotal">0</span></h3>
+        </div>
+        <div class="col-12 col-lg-4">
+          <p class="p-0 m-0">Promo Code</p>
+          <div>
+            <input type="text" name="promo-code" id="promo-code" />
+            <div id="discount">-</div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <p class="p-0 m-0">Total</p>
+          <div id="total-price">
+            <h3 class="m-0 p-0">Rp<span id="cart-total">0</span></h3>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="/app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
