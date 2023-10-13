@@ -1,2 +1,2 @@
 # synrgy-inclass-challenges-bayu-wiratama
-Repository for In-Class Challenges
+Repository for Shopping Cart challenge
